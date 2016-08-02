@@ -21,6 +21,17 @@ h6 {
   font-weight: 300;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.contact-text {
+  text-transform: none;
+  font-size: 1.45em;
+  background: #4bae4b;
+  color: #fff;
+  border-radius: 0px;
+  padding: 0 20px;
+  width: 106%;
+  margin-left: -15px;
+  font-weight: 400; }
+
 p {
   font-size: 1.25em;
   line-height: 1.6;
