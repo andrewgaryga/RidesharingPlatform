@@ -71,12 +71,8 @@ hr.small {
   height: 80px; }
 
 .navbar-logo {
-  width: 97px;
-  position: absolute;
-  top: -9px; }
-
-.link-margin {
-  margin-left: 15%; }
+  width: 230px;
+  margin-top: 8px; }
 
 .box {
   margin-bottom: 20px;
@@ -86,12 +82,26 @@ hr.small {
 
 .no-title {
   padding-top: 0; }
+  .no-title .btn.btn-success {
+    margin-top: 172px; }
 
 .intro-text {
   text-transform: uppercase;
   font-size: 1.25em;
   font-weight: 400;
   letter-spacing: 1px; }
+
+.red {
+  color: #E31328; }
+
+.green {
+  color: #3CA065; }
+
+.blue {
+  color: #709CD5; }
+
+.yellow {
+  color: #F5F244; }
 
 .portfolio {
   padding: 50px 0; }
@@ -134,15 +144,28 @@ footer p {
   .navbar-header {
     display: none; }
 
+  .navbar {
+    min-height: 180px; }
+
   .navbar-default {
     border: none;
     background: #fff;
     background: rgba(255, 255, 255, 0.9); }
 
+  .navbar-nav > li.nav-position {
+    margin-top: 62px;
+    margin-left: 45px;
+    margin-right: 45px; }
+
   .navbar-nav > li > a {
     line-height: normal; }
 
   .navbar-nav {
+    letter-spacing: 10px;
+    display: table;
+    float: none;
+    margin: 0 auto;
+    table-layout: fixed;
     font-size: 1.25em; }
 
   .navbar-brand {
