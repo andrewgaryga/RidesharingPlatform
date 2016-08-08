@@ -13,9 +13,7 @@ h4,
 h5,
 h6 
 	text-transform: uppercase
-	// font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif
 	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif
-	// font-weight: 700
 	letter-spacing: 1px
 
 .thin-text
@@ -26,13 +24,12 @@ h6
 .contact-text
 	text-transform: none
 	font-size: 1.45em
-	// background: rgba(255,255,255,0.9)
 	background: #4bae4b
 	color: #fff
 	border-radius: 0px
 	padding: 10px 20px
-	width: 106%
-	margin-left: -15px
+	width: 111.2%
+	margin-left: -5.6%
 	font-weight: 400
 
 p
@@ -50,9 +47,6 @@ hr.small
 
 .logo 
 	max-width: 25%
-
-// .red 
-// 	text-shadow: 1px 1px 1px rgba(147, 0, 0, 0.54)
 
 .brand,
 .address-bar
@@ -73,48 +67,25 @@ hr.small
 	font-weight: 400
 	letter-spacing: 3px
 
+.navbar 
+	min-height: 65px
+
 .extra-width
 	width: 100px
 	height: 80px
 
-.navbar-logo
-	width: 230px
-	margin-top: 8px
-// 	// position: absolute
-// 	width: 97px
-// 	position: absolute
-// 	top: -9px
-
-// .link-margin
-// 	margin-left: 15%
-
-// .brand-before,
-// .brand-name 
-// 	text-transform: capitalize
-
-// .brand-before 
-// 	margin: 15px 0
-
-// .brand-name 
-// 	margin: 0
-// 	font-size: 4em
-
-// .tagline-divider 
-// 	margin: 15px auto 3px
-// 	max-width: 250px
-// 	border-color: #999999
-
 .box 
 	margin-bottom: 20px
-	// padding: 30px 15px
 	padding: 1px 15px
 	background: #fff
 	background: rgba(255,255,255,0.9)
 
 .no-title
 	padding-top: 0
+	margin-top: 3%
+	overflow: hidden
 	.btn.btn-success
-		margin-top: 172px
+		margin-top: 10px
 
 .intro-text 
 	text-transform: uppercase
@@ -131,18 +102,6 @@ hr.small
 .blue
 	color: #709CD5
 
-.yellow
-	color: #F5F244
-
-// .img-border 
-// 	float: none
-// 	margin: 0 auto 0
-// 	border: #999999 solid 1px
-
-// .img-left 
-// 	float: none
-// 	margin: 0 auto 0
-
 // portfolio
 .portfolio 
 	padding: 50px 0
@@ -153,8 +112,8 @@ hr.small
 .img-portfolio 
 	margin: 0 auto
 
-// .img-portfolio:hover 
-// 	opacity: 0.8
+.btn-is-disabled
+	pointer-events: none
 
 footer 
 	background: #fff
@@ -162,14 +121,20 @@ footer
 
 footer p 
 	margin: 0
-	// padding: 50px 0
 	padding: 20px 0
+
+@media screen and (min-width:435px)
+	.navbar 
+		min-height: 50px
+
+	.contact-text
+		width: 107.8%
+		margin-left: -3.9%
 
 @media screen and (min-width:768px)
 	.address-bar 
 		display: inherit
 		margin: 0
-		// padding: 60px 0
 		padding: 40px 0
 		text-align: center
 		text-shadow: 1px 1px 2px rgba(0,0,0,0.5)
@@ -188,39 +153,78 @@ footer p
 	.navbar-header 
 		display: none
 	.navbar 
-		min-height: 180px
+		min-height: 123px
 	.navbar-default 
 		border: none
 		background: #fff
 		background: rgba(255,255,255,0.9)
-	// .nav>li>a 
-	// 	padding: 35px
 	.navbar-nav>li.nav-position
-		margin-top: 62px
-		margin-left: 45px
-		margin-right: 45px
+		margin-top: 35px
+		margin-left: 0
+		margin-right: 0
+		span 
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13)
+			&.yellow
+				color: #F5F244
+				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
 	.navbar-nav>li>a 
 		line-height: normal
 	.navbar-nav 
-		letter-spacing: 10px
+		letter-spacing: 3px
 		display: table
 		float: none
 		margin: 0 auto
 		table-layout: fixed
-		font-size: 1.25em
+		font-size: 1.15em
 	.navbar-brand
 		font-size: 18px
 	.portfolio-item 
 		margin-bottom: 15px
+	.navbar-logo
+		width: 150px
+		margin-top: 8px
+	.contact-text
+		width: 104.2%
+		margin-left: -2.1%
+	.no-title
+		margin-top: 0
+
+@media screen and (min-width:992px)
+	.contact-text
+		width: 109%
+		margin-left: -4.5%
 
 @media screen and (min-width:1200px) 
 	.box:after 
 		content: ''
 		display: table
 		clear: both
+	.navbar-nav>li.nav-position
+		margin-top: 62px
+		margin-left: 13px
+		margin-right: 13px
+	.address-bar 		
+		font-size: 1.55em		
+		letter-spacing: 3px
+	.navbar-nav 
+		letter-spacing: 10px
+		font-size: 1.25em
+	.navbar-logo
+		width: 230px
+		margin-top: 8px
+	.navbar 
+		min-height: 180px
+	.contact-text
+		text-transform: none
+		width: 107.3%
+		margin-left: -3.7%
 
-// from freelancer
+@media screen and (min-width:1326px)
+	.navbar-nav>li.nav-position
+		margin-left: 45px
+		margin-right: 45px
 
+// contact form
 .floating-label-form-group 
 	position: relative
 	margin-bottom: 0
