@@ -12,6 +12,7 @@
 $(window).on("resize", function () {
     if ( $(window).width() > 992) { 
 	    x = $(".benefits").height();
+	    x = x + 1;
 	    console.log (x);
 	    $(".no-title").css("height", x);
     }
