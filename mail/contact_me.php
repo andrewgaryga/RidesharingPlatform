@@ -13,7 +13,7 @@ $phone = $_POST['phone'];
 	
 	
 // Create the email and send the message
-$to = 'ponytale@meta.ua'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'customersupport@bondride.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "BondRide Contact Form";
 $email_body = "You have received a new message from your BondRide website contact form.\n\n"."Here are the details:\n\nEmail: $email_address\n\nPhone: $phone";
 $headers = "From: noreply@bondride.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
