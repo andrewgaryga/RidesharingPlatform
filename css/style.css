@@ -64,7 +64,8 @@ hr.small {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 2px;
-  font-size: 14px; }
+  font-size: 14px;
+  width: 100%; }
   .navbar-brand a {
     margin-left: 127px; }
 
@@ -74,15 +75,27 @@ hr.small {
   letter-spacing: 3px; }
 
 .navbar {
-  min-height: 65px; }
+  min-height: 77px; }
 
 .navbar-default {
   background-color: #fff; }
 
 .logo-navbar {
+  position: relative;
+  text-align: center; }
+
+a.navbar-brand {
+  margin-left: 0px; }
+
+.text-navbar {
+  margin: 15px 0px 0 0;
+  text-align: center; }
+
+img.logo-navbar {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
-  top: 10px;
-  left: 11px; }
+  left: 50%; }
 
 .extra-width {
   width: 100px;
@@ -149,6 +162,19 @@ footer {
   .contact-text {
     width: 107.8%;
     margin-left: -3.9%; } }
+@media screen and (min-width: 557px) {
+  a.navbar-brand {
+    margin-left: 125px; }
+
+  img.logo-navbar {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    transform: none; }
+
+  .text-navbar {
+    text-align: left;
+    margin-top: 0; } }
 @media screen and (min-width: 768px) {
   .address-bar {
     display: inherit;
