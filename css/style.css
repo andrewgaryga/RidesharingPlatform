@@ -1,24 +1,7 @@
-body:before, body:after {
-  content: "";
-  position: fixed;
-  background: #fff;
-  left: 0;
-  right: 0;
-  height: 10px; }
-
-body:before {
-  top: 0; }
-
-body:after {
-  bottom: 0; }
-
-body {
-  border-left: 10px solid #fff;
-  border-right: 10px solid #fff; }
-
 html {
   position: relative;
-  min-height: 100%; }
+  min-height: 100%;
+  border: 10px solid white; }
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -27,7 +10,6 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding-top: 10px;
   height: 100%; }
 
 footer, .navbar, .benefits {
