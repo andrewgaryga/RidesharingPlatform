@@ -1,26 +1,8 @@
-// body:before, body:after 
-// 	content: ""
-// 	position: fixed
-// 	background: #fff
-// 	left: 0
-// 	right: 0
-// 	height: 10px
-
-// body:before 
-// 	top: 0
-
-// body:after 
-// 	bottom: 0
-
-// body 
-// 	border-left: 10px solid #fff
-// 	border-right: 10px solid #fff 
-
 html 
 	position: relative
 	// min-height: 100%
 	min-height: 100%
-	border: 5px solid white
+	border: 5px solid #fff
 
 body 
 	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
@@ -29,12 +11,8 @@ body
 	-moz-background-size: cover
 	background-size: cover
 	-o-background-size: cover
-	// padding-top: 10px
 	height: 100%
-	// for footer
-	// margin-bottom: 70px
 
-// mobile
 footer, .navbar
 	display: none
 
@@ -52,8 +30,20 @@ footer, .navbar
 	img 
 		max-width: 62%
 
-// .row-vertical-align-mobile, .container-vertical-align-mobile
-// 	height: 100%
+.top-border
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+
+	height: 5px
+	background-color: #fff
+	display: block
+	z-index: 99999
+	width: 100%
+	&:before 
+		display: table
+		content: " "
 
 .row-vertical-align-mobile
 	border-top: 5px solid white
@@ -183,7 +173,6 @@ hr.small
 .form-bottom
 	position: relative
 	bottom: 0
-	// width: 0
 
 .red
 	color: #E31328
@@ -194,7 +183,6 @@ hr.small
 .blue
 	color: #709CD5
 
-// portfolio
 .portfolio 
 	padding: 50px 0
 
@@ -233,10 +221,6 @@ footer
 			font-size: 30px
 	footer
 		display: inherit
-	// .row-vertical-align-mobile
-	// 	border: none
-	// .header-mobile
-	// 	display: none
 	.navbar 
 		min-height: 50px
 	.contact-text
@@ -244,10 +228,8 @@ footer
 		margin-left: -3.9%
 	hr.small 
 		display: inherit
-	// html
-	// 	border: none
 	body 
-		margin-bottom: 70px
+		margin-bottom: 69px
 	.row-vertical-align-mobile
 		border-bottom: 5px solid white
 
@@ -272,6 +254,10 @@ footer
 @media screen and (min-width:768px)
 	html
 		border: none
+	body 
+		margin-bottom: 70px
+	.top-border 
+		display: none
 	.row-vertical-align-mobile
 		border: none
 	.header-mobile
@@ -333,20 +319,14 @@ footer
 		margin-left: -2.1%
 	footer
 		border: none
+		bottom: -2px
 	.no-title
 		margin-top: 0
-		// padding-bottom: 99999px
-		// margin-bottom: -99999px
-	// .overflow-hidden
-	// 	overflow: hidden
 
 @media screen and (min-width:992px)
 	.contact-text
 		width: 109%
 		margin-left: -4.5%
-	// .no-title
-	// 	.btn.btn-success
-	// 		margin-top: 172px
 	.form-bottom
 		position: absolute
 		bottom: 35px

@@ -1,7 +1,7 @@
 html {
   position: relative;
   min-height: 100%;
-  border: 5px solid white; }
+  border: 5px solid #fff; }
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -27,6 +27,20 @@ footer, .navbar {
     font-size: 17px; }
   .header-mobile img {
     max-width: 62%; }
+
+.top-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #fff;
+  display: block;
+  z-index: 99999;
+  width: 100%; }
+  .top-border:before {
+    display: table;
+    content: " "; }
 
 .row-vertical-align-mobile {
   border-top: 5px solid white;
@@ -211,7 +225,7 @@ footer {
     display: inherit; }
 
   body {
-    margin-bottom: 70px; }
+    margin-bottom: 69px; }
 
   .row-vertical-align-mobile {
     border-bottom: 5px solid white; } }
@@ -237,6 +251,12 @@ footer {
 @media screen and (min-width: 768px) {
   html {
     border: none; }
+
+  body {
+    margin-bottom: 70px; }
+
+  .top-border {
+    display: none; }
 
   .row-vertical-align-mobile {
     border: none; }
@@ -312,7 +332,8 @@ footer {
     margin-left: -2.1%; }
 
   footer {
-    border: none; }
+    border: none;
+    bottom: -2px; }
 
   .no-title {
     margin-top: 0; } }
