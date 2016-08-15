@@ -347,7 +347,10 @@ footer {
     bottom: 35px;
     width: 100%; }
     .form-bottom .btn-success {
-      margin-left: -15px; } }
+      margin-left: -15px; }
+
+  .no-title {
+    min-height: 380px; } }
 @media screen and (min-width: 1200px) {
   .box:after {
     content: "";
