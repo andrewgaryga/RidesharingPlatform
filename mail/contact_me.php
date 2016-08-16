@@ -24,7 +24,7 @@ mail($to,$email_subject,$email_body,$headers);
 $to = $email_address; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "BondRide Community Welcomes You!";
 $email_body = "Hey there, \n\nWelcome to our world ☺.\n\nWe are very excited to have you as a part of the BondRide community. We founded BondRide because we wanted to create a trustworthy and inspiring place for you to connect with other travellers, reduce travel time and costs of your journey to and from airport.\n\nOur fantastic team are working tirelessly on the first version of the BondRide platform, and should be ready to launch in November. We will send you an email when everything is completed.\n\nUntil then, if you have any questions or concerns you can contact our support centre on customersupport@bondride.com\n\n"."\n\nSincerely,\n\nBondRide Team\n\nP.S. You can find us on Facebook and Twitter.";
-$headers = "From: noreply@bondride.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers = "From: customersupport@bondride.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: customersupport@bondride.com";	
 mail($to,$email_subject,$email_body,$headers);
 
